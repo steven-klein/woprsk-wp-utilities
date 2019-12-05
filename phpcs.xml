@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="sklein-wp-utilities">
+  <description>WP Utilities Coding Standards</description>
+  <file>src/</file>
+  <arg name="basepath" value="/"/>
+  <arg name="extensions" value="php"/>
+  <arg name="report" value="full"/>
+  <arg name="warning-severity" value="6"/>
+  <arg name="colors"/>
+  <arg value="s"/>
+  <rule ref="PSR2" />
+</ruleset>
