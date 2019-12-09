@@ -90,18 +90,18 @@ class SMTP
         $phpmailer->Port = $this->WP_MAIL_SMTP_PORT;
 
         // The encryption system to use - ssl (deprecated) or tls
-        $phpmailer->SMTPSecure = $this->$WP_MAIL_SMTP_SECURE;
+        $phpmailer->SMTPSecure = $this->WP_MAIL_SMTP_SECURE;
 
         // if using auth, also set the username and password.
-        if ($this->$WP_MAIL_SMTP_AUTH !== false) {
+        if ($this->WP_MAIL_SMTP_AUTH !== false) {
             // Use SMTP authentication (true|false)
-            $phpmailer->SMTPAuth = $this->$WP_MAIL_SMTP_AUTH;
+            $phpmailer->SMTPAuth = $this->WP_MAIL_SMTP_AUTH;
 
             // Username to use for SMTP authentication
-            $phpmailer->Username = $this->$WP_MAIL_SMTP_USERNAME;
+            $phpmailer->Username = $this->WP_MAIL_SMTP_USERNAME;
 
             // Password to use for SMTP authentication
-            $phpmailer->Password = $this->$WP_MAIL_SMTP_PASSWORD;
+            $phpmailer->Password = $this->WP_MAIL_SMTP_PASSWORD;
         }
     }
 }
